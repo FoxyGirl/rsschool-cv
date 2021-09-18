@@ -71,31 +71,37 @@ _Course: JavaScript basic course_
 
 [Certificate](https://assets.htmlacademy.ru/certificates/intensive/36/54237.pdf) / 
 [Project](https://github.com/FoxyGirl/54237-kekstagram)  
+
 ___
 ### 09/2016 – 10/2016 –  HTML Academy
 _Course: HTML & CSS advanced course_
 
 [Certificate](https://assets.htmlacademy.ru/certificates/intensive/27/54237.pdf) / 
-[Project](https://github.com/FoxyGirl/54237-pink)  
+[Project](https://github.com/FoxyGirl/54237-pink) 
+
 ___
 ### 05/2014 – 05/2016 – Educational Center of HTP
 
 _Course: Practice of Front-end Development_
 
 Scrum-methodology. Git, Jira, Confluence. Work in PHP and .Net teams
-Certificate
+Certificate 
+
 ___
 ### 01/2015 – 04/2015 – Educational Center of HTP
 
 _Course: JavaScript Advanced Level_
 
-Certificate, [SPA “Barley-break”](http://fe.it-academy.by/Projects/Pavlova_JSE/Project_15_SPA.html)
+Certificate, [SPA “Barley-break”](http://fe.it-academy.by/Projects/Pavlova_JSE/Project_15_SPA.html) 
+
 ___
 ### 03/2014 – 06/2014 – Educational Center of HTP
 
 _Course: WEB Development_
 
-Certificate
+Certificate 
+
+___
 
 
 
