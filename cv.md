@@ -10,6 +10,17 @@ Frontend developer
 - __Location__: Minsk, The Republic of Belarus
 
 
+### About Me
+
+I have a big willing to be a professional frontend developer which can solve different tasks for creating web apps. 
+
+I believe that RS Schools will help me to get strong knowledge of ES6 JavaScript, Typescript and great experience of development React apps.
+
+I tend to keep my knowledge and technical skills relevant to modern developments. 
+
+In my opinion I'm a good team worker, having good analytical, problem solving and interpersonal skills.
+
+
 ### Skills and Proficiency
 - HTML5, CSS3, Less, Saas
 - JavaScript, jQuery, React
@@ -19,7 +30,7 @@ Frontend developer
 - Experience with Agile Methodologies, Jira, Confluence, Clubhouse
 
 
-### Code example
+### Code Example
 ___Stop gninnipS My sdroW! KATA from CODEWARS:___ 
 
 >Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (like the name of this kata).
@@ -92,3 +103,6 @@ Certificate
 
 ### Languages
 __English - B2__ (Upper-intermediate) / Certificate CEFR Level B2 from iSpeak Language school
+
+### Portfolio: 
+[epa.homebox.by](http://epa.homebox.by/)
