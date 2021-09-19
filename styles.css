@@ -306,6 +306,7 @@ body {
   width: 180px;
   margin-top: auto;
   margin-bottom: 15px;
+  margin-left: auto;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
@@ -339,6 +340,49 @@ body {
   font-weight: bold;
 }
 
+.projects__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projects__item {
+  margin-bottom: 20px;
+}
+
+.project {
+  display: flex;
+}
+
+@media (min-width: 600px) and (max-width: 849px) {
+  .projects__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.project a:hover img,
+.project a:focus img {
+  border-color: var(--accent-color);
+  box-shadow: 0 3px 8px rgba(0,0,0,.24);
+}
+
+.project figure {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.project img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--accent2-color);
+  object-fit: cover;
+}
+
 .code-example {
   position: relative;
   padding: 20px;
@@ -349,7 +393,7 @@ body {
 .code-example .title {
   position: absolute;
   top: -15px;
-  left: -20px;
+  left: -10px;
   padding: 5px 15px;
   font-size: 14px;
   color: var(--light-color);
@@ -379,7 +423,7 @@ body {
   position: relative;
   margin: 0;
   padding-left: 15px;
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
 }
 
