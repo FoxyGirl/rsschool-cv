@@ -16,11 +16,13 @@ body {
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
   color: var(--main-color);
+  background-color: #b3b1b042;
 }
 
 .wrapper {
   max-width: 900px;
   margin: 0 auto;
+  background-color: var(--light-color);
   box-shadow: 0 3px 8px rgba(0,0,0,.24);
 }
 
@@ -45,6 +47,7 @@ body {
 
 .personal-info__name {
   position: relative;
+  margin-bottom: 40px;
   font-size: 36px;
   font-weight: 400;
   color: var(--accent-color);
@@ -89,12 +92,11 @@ body {
   overflow: hidden;    
 }
 
-.contacts::after {
+.contacts::before {
   content: "";
   position: absolute;
   top: 10px;
   right: -200px;
-  z-index: -1;
   width: 400px;
   height: 400px;
   border-radius: 50%;
@@ -103,6 +105,8 @@ body {
 
 .photo {
   display: block;
+  position: relative;
+  z-index: 1;
   width: 150px;
   height: 150px;
   margin-left: 40px;
@@ -116,6 +120,8 @@ body {
 }
 
 .contacts__list {
+  position: relative;
+  z-index: 1;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -154,6 +160,7 @@ body {
 
 .date {
   display: block;
+  margin-bottom: 5px;
   font-size: 12px;
   color: var(--accent-color);
 }
