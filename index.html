@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <link rel="stylesheet" href="./a11y-dark.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll()</script>
   </head>
   <body>
     <div class="wrapper">
@@ -15,13 +19,13 @@
         <section class="personal-info">
           <h1 class="personal-info__name">Elena <span>Pavlova</span></h1>
           <p>
-            I have a big willing to be a professional frontend developer which can solve different tasks for creating web apps.
-          </p>
-          <p>
-            I believe that RS Schools will help me to get strong knowledge of ES6 JavaScript, Typescript and great experience of development React apps.
+            My main goal is to be a professional frontend developer which can solve different tasks for creating web apps.
           </p>
           <p>
             I tend to keep my knowledge and technical skills relevant to modern developments. 
+          </p>
+          <p>
+            I believe that RS School will help me to get strong knowledge of ES6 JavaScript, Typescript and great experience of React apps development.
           </p>
           <h2 class="title">Job objective</h2>
           <p>Frontend developer</p>
@@ -183,6 +187,33 @@
               <li class="language__item"><span>English</span> - B2 (Upper-intermediate) / Certificate CEFR Level B2 from iSpeak Language school</li>
             </ul>
           </section>
+
+          <section class="projects">
+            <h2 class="title">Some projects</h2>
+            <ul class="projects__list">
+              <li class="projects__item">
+                <div class="project">
+                  <a href="http://epa.homebox.by/cat-energy/index.html" target="_blank">
+                    <figure>
+                      <img src="./images/to-do-react.png" alt="To-Do App React">
+                    </figure>
+                   </a>
+                   <div class="text">To-Do App React: React, HTML5, CSS3</div>
+                 </div>
+              </li>
+              <li class="projects__item">
+                <div class="project">
+                  <a href="http://epa.homebox.by/weather-minsk/index.html" target="_blank">
+                    <figure>
+                      <img src="./images/weather-minsk.png" alt="Weather Minsk">
+                    </figure>
+                   </a>
+                   <div class="text">JS widget: Weather in Minsk. XMLHttpRequest, json, api openweathermap</div>
+                 </div>
+              </li>
+            </ul> 
+          </section>
+          
           <a class="portfolio-link" href="http://epa.homebox.by/" target="_blank">My Portfolio</a>
         </div>
 
@@ -200,7 +231,7 @@
             </blockquote>
           </div>
           <pre class="code-example__code">
-            <code>
+            <code class="language-javascript">
 function spinWords(text) {
   const words = text.split(' ');
   const spinnedWords = words.map((word) => 

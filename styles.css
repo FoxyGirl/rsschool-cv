@@ -16,11 +16,13 @@ body {
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
   color: var(--main-color);
+  background-color: #b3b1b042;
 }
 
 .wrapper {
   max-width: 900px;
   margin: 0 auto;
+  background-color: var(--light-color);
   box-shadow: 0 3px 8px rgba(0,0,0,.24);
 }
 
@@ -45,6 +47,7 @@ body {
 
 .personal-info__name {
   position: relative;
+  margin-bottom: 40px;
   font-size: 36px;
   font-weight: 400;
   color: var(--accent-color);
@@ -89,12 +92,11 @@ body {
   overflow: hidden;    
 }
 
-.contacts::after {
+.contacts::before {
   content: "";
   position: absolute;
   top: 10px;
   right: -200px;
-  z-index: -1;
   width: 400px;
   height: 400px;
   border-radius: 50%;
@@ -103,6 +105,8 @@ body {
 
 .photo {
   display: block;
+  position: relative;
+  z-index: 1;
   width: 150px;
   height: 150px;
   margin-left: 40px;
@@ -116,6 +120,8 @@ body {
 }
 
 .contacts__list {
+  position: relative;
+  z-index: 1;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -154,6 +160,7 @@ body {
 
 .date {
   display: block;
+  margin-bottom: 5px;
   font-size: 12px;
   color: var(--accent-color);
 }
@@ -275,7 +282,7 @@ body {
   padding-right: 20px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   .addon {
     display: grid;
     grid-template-columns: 350px 1fr;
@@ -299,6 +306,7 @@ body {
   width: 180px;
   margin-top: auto;
   margin-bottom: 15px;
+  margin-left: auto;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
@@ -332,6 +340,49 @@ body {
   font-weight: bold;
 }
 
+.projects__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projects__item {
+  margin-bottom: 20px;
+}
+
+.project {
+  display: flex;
+}
+
+@media (min-width: 600px) and (max-width: 849px) {
+  .projects__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.project a:hover img,
+.project a:focus img {
+  border-color: var(--accent-color);
+  box-shadow: 0 3px 8px rgba(0,0,0,.24);
+}
+
+.project figure {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.project img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--accent2-color);
+  object-fit: cover;
+}
+
 .code-example {
   position: relative;
   padding: 20px;
@@ -342,7 +393,7 @@ body {
 .code-example .title {
   position: absolute;
   top: -15px;
-  left: -20px;
+  left: -10px;
   padding: 5px 15px;
   font-size: 14px;
   color: var(--light-color);
@@ -372,7 +423,7 @@ body {
   position: relative;
   margin: 0;
   padding-left: 15px;
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
 }
 
