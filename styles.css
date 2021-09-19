@@ -372,7 +372,51 @@ body {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
-  background-color: var(--accent-color);
+  font-size: 14px;
+  font-weight: bold;
   color: var(--light-color);
+  background-color: var(--accent-color);
+}
+
+.rs-school-link {
+  order: 3;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: auto;
+}
+
+.rs-school-link img {
+  transition: transform 0.3s;
+}
+
+.rs-school-link:hover img {
+  transform: rotate3d(0, 1, 0, 360deg);
+}
+
+.github-link {
+  order: 1;
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+.github-link img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.github-link:hover span {
+  text-decoration: underline;
+}
+
+.copyright {
+  order: 2;
 }
