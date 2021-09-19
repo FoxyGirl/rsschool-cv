@@ -22,11 +22,14 @@ body {
   box-shadow: 0 3px 8px rgba(0,0,0,.24);
 }
 
-main {
+.main {
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 350px;
   gap: 20px;
-  padding: 20px 0 20px 20px; 
+  padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 .personal-info__name {
@@ -198,6 +201,11 @@ main {
   display: none;
 }
 
+.aside {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .skills__list {
   margin: 0;
   padding: 0;
@@ -206,6 +214,10 @@ main {
 
 .skills__item {
   margin-bottom: 20px;
+}
+
+.skills__item:last-child {
+  margin-bottom: 0;
 }
 
 .skills__group {
@@ -247,6 +259,86 @@ main {
 
 .skills__names li:last-child:after {
   display: none;
+}
+
+.addon {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.addon .title {
+  margin-top: 0;
+}
+
+.languages__list {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.language__item {
+  margin-bottom: 10px;
+}
+
+.language__item span {
+  font-weight: bold;
+}
+
+.code-example {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: var(--lighten-accent-color);
+}
+
+.code-example .title {
+  position: absolute;
+  top: -15px;
+  left: -20px;
+  padding: 5px 15px;
+  font-size: 14px;
+  color: var(--light-color);
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+}
+
+.code-example__code {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.code-example__description h3 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.code-example__description blockquote {
+  position: relative;
+  margin: 0;
+  padding-left: 15px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.code-example__description blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--main-color);
+  opacity: .3;
+}
+
+.code-example__description ul {
+  margin-top: 5px;
+  padding-left: 20px;
 }
 
 .footer {

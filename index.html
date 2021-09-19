@@ -11,8 +11,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <main>
-
+      <main class="main">
         <section class="personal-info">
           <h1 class="personal-info__name">Elena <span>Pavlova</span></h1>
           <p>
@@ -112,7 +111,7 @@
             </li>
           </ul>
         </section>
-        <aside>
+        <aside class="aside">
           <section class="education">
             <h2 class="title">Education</h2>
             <p class="text">
@@ -175,6 +174,42 @@
           </section>
         </aside>
       </main>
+      <section class="addon">
+        <section class="languages">
+          <h2 class="title">Languages</h2>
+          <ul class="languages__list">
+            <li class="language__item"><span>Russian</span> - Mother Tongue</li>
+            <li class="language__item"><span>English</span> - B2 (Upper-intermediate) / Certificate CEFR Level B2 from iSpeak Language school</li>
+          </ul>
+        </section>
+
+        <section class="code-example">
+          <h2 class="title">Code Example</h2>
+          <div class="code-example__description">
+            <h3>Stop gninnipS My sdroW! <br>KATA from CODEWARS:</h3>
+            <blockquote>
+              Write a function that takes in a string of one or more words, and returns the same string, 
+              but with all five or more letter words reversed (like the name of this kata).
+              <ul>
+                <li>Strings passed in will consist of only letters and spaces.</li>
+                <li>Spaces will be included only when more than one word is present.</li>
+              </ul>
+            </blockquote>
+          </div>
+          <pre class="code-example__code">
+            <code>
+function spinWords(text) {
+  const words = text.split(' ');
+  const spinnedWords = words.map((word) => 
+    word.length >= 5 
+      ? word.split('').reverse().join('') 
+      : word);
+      
+  return spinnedWords.join(' ');
+}</code>
+          </pre>
+        </section>
+      </section>
       <footer class="footer">
         Footer
       </footer>
