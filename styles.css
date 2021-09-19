@@ -1,139 +1,142 @@
 :root {
-    --main-color: #333333;
-    --accent-color: #4299E1;
-    --lighten-accent-color: #4299e14d;
+  --main-color: #333;
+  --accent-color: #4299E1;
+  --lighten-accent-color: #4299e14d;
 }
 
 *, *::after, *::before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    font-family: Montserrat, sans-serif;
-    color: var(--main-color);
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  color: var(--main-color);
 }
 
 .wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 3px 8px rgba(0,0,0,.24);
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 20px;
-    padding: 20px 0 20px 20px; 
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+  padding: 20px 0 20px 20px; 
 }
 
 .personal-info__name {
-    position: relative;
-    font-size: 36px;
-    font-weight: 400;
-    color: var(--accent-color);
+  position: relative;
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--accent-color);
 }
 
 .personal-info__name::after {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    width: 70px;
-    height: 9px;
-    background-color: var(--lighten-accent-color);
-    border-radius: 35px;
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 70px;
+  height: 9px;
+  background-color: var(--lighten-accent-color);
+  border-radius: 35px;
 }
 
 .personal-info__name span {
-    display: block;
-    text-transform: uppercase;
+  display: block;
+  text-transform: uppercase;
 }
 
 .title {
-    margin: 40px 0 10px;
-    font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .contacts {
-    position: relative;
-    padding: 0px 20px;
-    background: url('./images/design-elements.svg') no-repeat 40px center;
-    background-size: 250px;
-    overflow: hidden;    
+  position: relative;
+  padding: 0 20px;
+  background-image: url("./images/design-elements.svg");
+  background-repeat: no-repeat;
+  background-position: 40px center;
+  background-size: 250px;
+  overflow: hidden;    
 }
 
 .contacts::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    right: -200px;
-    z-index: -1;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background-color: var(--lighten-accent-color);
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -200px;
+  z-index: -1;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: var(--lighten-accent-color);
 }
 
 .photo {
-    display: block;
-    width: 150px;
-    height: 150px;
-    margin-left: 40px;
-    margin-top: 30px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    box-shadow: 
-        0px 6px 12px -2px rgba(50, 50, 93, 0.25), 
-        0px 3px 7px -3px rgba(0, 0, 0, 0.3);
-    object-fit: cover;
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-left: 40px;
+  margin-top: 30px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 
+    0 6px 12px -2px rgba(50,50,93,.25), 
+    0 3px 7px -3px rgba(0,0,0,.3);
+  object-fit: cover;
 }
 
 .contacts__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
 }
 
 .contacts__list li {
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 .contacts__list li span {
-    font-weight: bold;
-    color: var(--accent-color);
+  font-weight: bold;
+  color: var(--accent-color);
 }
 
 .contacts__list li a {
-    text-decoration: none;
-    color: var(--main-color);
+  text-decoration: none;
+  color: var(--main-color);
 }
 
 .contacts__list li a:hover,
 .contacts__list li a:focus {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .text {
-    margin: 0;
-    font-size: 16px;
+  margin: 0;
+  font-size: 16px;
 }
 
 .addition {
-    margin: 0;
-    font-size: 14px;
+  margin: 0;
+  font-size: 14px;
 }
 
 .date {
-    display: block;
-    font-size: 12px;
-    color: var(--accent-color);
+  display: block;
+  font-size: 12px;
+  color: var(--accent-color);
 }
 
 .footer {
-    padding: 10px 20px;
-    background-color: var(--accent-color);
-    color: #ffffff;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: #fff;
 }
