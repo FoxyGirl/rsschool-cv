@@ -15,6 +15,36 @@
   </head>
   <body>
     <div class="wrapper">
+      <header class="header">
+        <nav class="main-nav">
+          <button class="main-nav__toggler" type="button" id="navToggler">
+              <span></span>
+          </button>
+          <ul class="main-nav__list" id="mainNav">
+              <li class="main-nav__item">
+                  <a href="#contacts">Contacts</a>
+              </li>
+              <li class="main-nav__item">
+                  <a href="#courses">Courses</a>
+              </li>
+              <li class="main-nav__item">
+                  <a href="#education">Education</a>
+              </li>
+              <li class="main-nav__item">
+                  <a href="#skills">Skills</a>
+              </li>
+              <li class="main-nav__item">
+                  <a href="#code-example">Code Example</a>
+              </li>
+              <li class="main-nav__item">
+                  <a href="#languages">Languages</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#some-projects">Some projects</a>
+              </li>
+          </ul>
+        </nav>
+      </header>
       <main class="main">
         <section class="personal-info">
           <h1 class="personal-info__name">Elena <span>Pavlova</span></h1>
@@ -33,7 +63,7 @@
 
         <section class="contacts">
           <img class="photo" src="./images/my-photo.jpeg" alt="photo" >
-          <h2 class="title">Contacts</h2>
+          <h2 class="title" id="contacts">Contacts</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
               <span>Email: </span>
@@ -54,7 +84,7 @@
           </ul>
         </section>
 
-        <section class="courses">
+        <section class="courses" id="courses">
           <h2 class="title">Courses</h2>
           <ul class="courses__list">
             <li class="courses__item">
@@ -116,7 +146,7 @@
           </ul>
         </section>
         <aside class="aside">
-          <section class="education">
+          <section class="education" id="education">
             <h2 class="title">Education</h2>
             <p class="text">
               <span class="date">09/1989 - 06/1994</span> Belarusian State University of Informatics and Radioelectronics
@@ -125,7 +155,7 @@
             <p class="addition">speciality: Engineer of Radioelectronics</p>
           </section>
 
-          <section class="skills">
+          <section class="skills" id="skills">
             <h2 class="title">Skills</h2>
             <ul class="skills__list">
               <li class="skills__item">
@@ -180,7 +210,7 @@
       </main>
       <div class="addon">
         <div class="addon__wrap">
-          <section class="languages">
+          <section class="languages" id="languages">
             <h2 class="title">Languages</h2>
             <ul class="languages__list">
               <li class="language__item"><span>Russian</span> - Mother Tongue</li>
@@ -188,7 +218,7 @@
             </ul>
           </section>
 
-          <section class="projects">
+          <section class="projects" id="some-projects">
             <h2 class="title">Some projects</h2>
             <ul class="projects__list">
               <li class="projects__item">
@@ -217,7 +247,7 @@
           <a class="portfolio-link" href="http://epa.homebox.by/" target="_blank">My Portfolio</a>
         </div>
 
-        <section class="code-example">
+        <section class="code-example" id="code-example" >
           <h2 class="title">Code Example</h2>
           <div class="code-example__description">
             <h3>Stop gninnipS My sdroW! <br>KATA from CODEWARS:</h3>
@@ -254,6 +284,12 @@ function spinWords(text) {
         </a>
         <span class="copyright">&copy; 2021</span>
       </footer>
+      <a class="arrow-to-up" id="toUp" href="#">
+        <svg version="1.1" width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
+            <polyline points="0,100 50,50 100,100" fill="none" stroke="black" stroke-width="10"/>
+        </svg>
+      </a>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
